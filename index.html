@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Home: Ramananda College</title> 
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <style>
+        /* CSS styles for the warning message */
+        .warning-message {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        </style>
+
+  <style>
+        .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .dropdown-divider {
+          border-top: 1px solid #ccc;
+          margin: 0.5rem 0;
+      }
+  </style>
+
+<!-- CSS code for the animation -->
+<style>
+  .animated-link {
+    animation: color-change 1s linear infinite;
+    margin-bottom: 10px;
+  }
+
+  @keyframes color-change {
+    0% {
+      color: initial;
+    }
+    50% {
+      color: #ff0000; /* Set the desired color during the animation */
+    }
+    100% {
+      color: initial;
+    }
+  }
+</style>
+
+<!--css file-->
+   <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--   external css-->
+   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<!--   fontawesome css-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" type="text/css">
+   <script src="assets/js/jquery-3.5.1.min.js"></script>
+   
+   
+    </head>
+    <body>
+      <!-- Warning message element -->
+<div id="warning" class="warning-message">
+  It is a small effort of our own knowledge about the webpage and website and so that students can easily know about the college and always keep themselves updated with the college.
+   Click <a href="#" onclick="removeWarning()">here</a> to remove it.
+</div>
+
+<!-- Include the JavaScript code to remove the warning message -->
+<script>
+  // JavaScript function to remove the warning message
+  function removeWarning() {
+      var warningElement = document.getElementById("warning");
+      warningElement.style.display = "none";
+  }
+</script>
+
+<div id="date-time"></div>
+<script>// Function to update the date and time
+  function updateDateTime() {
+    // Get the current date and time
+    var dateTime = new Date();
+  
+    // Format the date and time as desired
+    var date = dateTime.toDateString();
+    var time = dateTime.toLocaleTimeString();
+  
+    // Update the HTML element with the formatted date and time
+    document.getElementById("date-time").textContent = "Current Date: " + date + " || Current Time: " + time;
+  }
+  
+  // Call the updateDateTime function initially to display the date and time
+  updateDateTime();
+  
+  // Update the date and time every second (1000 milliseconds)
+  setInterval(updateDateTime, 1000);
+  </script>
+  <div id="ad-content">
+    <div id="date-time"></div>
+  </div>
+
+         <div class="container-fluid bg-info">
+             <div class="container">
+               <div class="row">
+                   <div class="col-sm-4 col-3">
+                       <img class="img-fluid logo" src="assets/images/logo.webp" alt="logo image">
+                   </div>
+                   
+                   <div class="col-sm-4 col-4">
+                       <h1 class="logo-head" style="font-family: 'Edwardian Script ITC',sans-serif;font-size: 54px;font-weight: bold;">Ramananda College</h1><h3 style="font-style: italic;text-align: center;">Bishnupur, Bankura</h3>
+                   </div>
+                   
+                   <div class="col-sm-4 col-4">
+                    <div class="ico-icon">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="index.html"><i class=" fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x "></i></a>
+                     </div> 
+                   </div> 
+               </div>
+             </div>
+         </div>
+         
+         
+<!-- strat navbar        -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-theme"> 
+ <a href="index.html" class="navbar-brand">
+     <img class="img-fluid brand-logo" src="assets/images/logo.webp" alt="logo image">
+ </a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars text-light"></i>
+</button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://tawk.to/chat/649371c8cc26a871b023f2b7/1h3fv8u61">livechat</a>
+          <!--<button on click="changeColor()" class="dropdown-item" href="https://openai.com/blog/chatgpt">ChatGpt </button>-->
+          <a class="dropdown-item" href="https://chat.openai.com/auth/login">ChatGpt for Question-Solving</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="about-us.html">About Us</a>
+          <a class="dropdown-item" href="mission-&-vision.html">Student Life</a> 
+          <a class="dropdown-item" href="message.html">Developer's Message</a> 
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="admision-procedure.html">Addmission Procedure</a>
+          <a class="dropdown-item" href="facilities.html">Facilities</a> 
+          <a class="dropdown-item" href="our-team.html">C.S Department</a> 
+          <a class="dropdown-item" href="department.html">Others Department</a> 
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Regular Updates
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://bkuresults01.com/oas/OpenLink/PreviourYearQuestionPaper">Previous year questions paper</a>
+          <a class="dropdown-item" href="https://aviortechnologies.in/developer/vas/ramananda_vas/">Library: check book</a> 
+          <a class="dropdown-item" href="https://www.ramanandacollege.org/study_material.php">Study Material</a> 
+          <a class="dropdown-item" href="https://www.bankurauniv.ac.in/get-page-details-category/5">News & Events</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Notice
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="ugnotice.html">UG</a> 
+          <a class="dropdown-item" href="pgnotice.html">PG</a> 
+          <a class="dropdown-item" href="scholarshipnotice.html">scholarship</a>  
+          <a class="dropdown-item" href="https://cms.ecounselling.nic.in/CMSAdmin/Handler/FileHandler.ashx?B=119&A=200&F=44&L=P">Others Exam Preparation</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="photos.html">Photos</a>  
+        </div>
+      </li> 
+      <li class="nav-item ">
+        <a class="nav-link" href="contact-us.html">Contact us</a>
+      </li>    
+      </ul> 
+  </div>
+</nav>
+<!-- end strat navbar        -->  
+
+    
+       
+       <!-- HTML code for the section where the latest link will be displayed -->
+<div id="latest-link-section">
+  <marquee direction="left" scrollamount="4" scrolldelay="10" onmouseover="this.setAttribute('scrollamount',0,0);this.stop();" onmouseout="this.setAttribute('scrollamount',4,0);this.start();">
+  <img src="assets/images/new.gif">
+  <h><b>Important Link:</b></h>
+  <a id="latest-link" href="https://www.ramanandacollege.org/" class="animated-link">Ramananda College Official Website </a>||
+  <a id="latest-link" href="https://bkuresults01.com/oas/login/auth" class="animated-link">Bankura University Student Login Page </a>||
+  <a id="latest-link" href="https://www.bankurauniv.ac.in/" class="animated-link">Bankura University Official Website</a>
+  </marquee>
+</div>
+
+<!-- JavaScript code to fetch and update the latest link -->
+<script>
+  // Function to fetch the latest link from the server
+  function fetchLatestLink() {
+    // Make an API request or retrieve the link from your data source
+    // Replace the placeholder URL with your actual endpoint or data retrieval logic
+    fetch('https://www.ramanandacollege.org/')
+      .then(response => response.json())
+      .then(data => {
+        // Update the link element with the latest link
+        const latestLinkElement = document.getElementById('latest-link');
+        latestLinkElement.textContent = data.url;
+        latestLinkElement.href = data.url;
+
+        // Generate a random color for the link
+        const randomColor = generateRandomColor();
+        latestLinkElement.style.color = randomColor;
+
+        // Add CSS animation classes to the link element
+        latestLinkElement.classList.remove('animated-link');
+        void latestLinkElement.offsetWidth; // Trigger reflow to restart the animation
+        latestLinkElement.classList.add('animated-link');
+      })
+      .catch(error => {
+        console.error('Error fetching latest link:', error);
+      });
+  }
+
+  // Function to generate a random color in hexadecimal format
+  function generateRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  // Call the fetchLatestLink function repeatedly every 5 seconds
+  setInterval(fetchLatestLink, 5000);
+</script>
+
+
+
+<!--    start cauresel    -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/images/c1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/c2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/c3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--end -->
+
+<div class="container-fluid mt-4">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Welcome to Ramananda College</h2>
+            <p>Ramananda College was established in 1945 and is located in India and belongs to Bishnupur.  This college works under Bankura University. PIN-722122, State-West Bengal
+              For those who want to come or study in this college from far away, there is no problem, come here, Hostel is open.
+              The teachers here always help the students with the maximum effort in any career related work.  Along with studies, the environment here is also very good and the wind coming from the lalbandh in front is a wonderful feeling and fills the mind and soul with joy.          
+              An exhibition is held here every year in which every department participates and the students of every department come together to display various knowledge and spread the knowledge.  Everyone is invited to this event.
+              This college has more than 110 teachers and more than 1500 students.
+
+            <p><b>Core Values</b></p>
+            <i>"The brain is the most valuable resource in the world and knowledge helps to live life properly."</i>
+        </div>
+        <div class="col-sm-4">
+            <div class="outer-right">
+              
+                <img class="img-fluid" src="assets/images/convocation-hat.png">
+                <h4>ADMISSIONS</h4>
+                <h5>OPEN FOR 2023-2024</h5>
+                <a href="https://www.ramanandacollege.org/">Visit Official Website</a>
+                <img src="assets/images/new.gif">
+                <style>
+                  .colored-text {
+                    color: white; /* Text color */
+                    background-color: red; /* Fill color */
+                  }
+                </style>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid mt-4">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-4"> 
+        
+            <marquee behavior="alternate">
+               <img src="assets/images/ball_rotate1.png">
+               <img src="assets/images/ball_rotate1.png">
+            </marquee>
+        <div class="mrq">    
+               <!--<b>BEGINNER</b>-->
+               <h3></h3>
+              <!-- <button class="get-btn">UG STUDENT-LOGIN</button>-->
+               <!--<a href="https://www.ramanandacollegeonlineadmission.in/student_login.aspx" class="button">UG STUDENT-LOGIN</a>-->
+               <style>
+                  @keyframes blink {
+                    0% { background-color: green; }
+                    50% { background-color: red; }
+                    100% { background-color: green; }
+                  }
+                
+                  .blinking-link {
+                  animation: blink 1s infinite;
+                  display: inline-block;
+                  padding: 10px 20px;
+                  color: white;
+                  text-decoration: none;
+                  border: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  }
+                </style>               
+                <a href="https://www.ramanandacollegeonlineadmission.in/student_login.aspx" class="blinking-link" >UG STUDENT-LOGIN</a>                
+        </div>
+        
+        </div> 
+        <div class="col-sm-4"> 
+            <marquee behavior="alternate">
+               <img src="assets/images/ball_rotate2.png">
+               <img src="assets/images/ball_rotate2.png">
+            </marquee>
+        <div class="mrq2">    
+               <!--<b>ADVANCED</b>-->
+               <h3></h3>
+               <!--<button class="get-btn">PG STUDENT-LOGIN</button>-->
+              <!-- <style>
+                .button {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #4CAF50;
+                  color: white;
+                  text-decoration: none;
+                  border: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  cursor: pointer;
+                }
+                </style>-->
+                <style>
+                  @keyframes blink {
+                    0% { background-color: green; }
+                    50% { background-color: red; }
+                    100% { background-color: green; }
+                  }
+                
+                  .blinking-link {
+                  animation: blink 1s infinite;
+                  display: inline-block;
+                  padding: 10px 20px;
+                  color: white;
+                  text-decoration: none;
+                  border: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  }
+                </style>
+                
+                <a href="https://www.ramanandacollegeonlineadmission.in/student_login.aspx" class="blinking-link">PG STUDENT-LOGIN</a>
+                
+        </div>
+        
+        </div> 
+        <div class="col-sm-4"> 
+        
+            <marquee behavior="alternate">
+               <img src="assets/images/ball_rotate3.png">
+               <img src="assets/images/ball_rotate3.png">
+            </marquee>
+        <div class="mrq3">    
+               <!--<b>DEPARTMENT</b>-->
+               <h3></h3>
+               <!--<button class="get-btn">ONLINE CLASS TEACHER-LOGIN</button>-->
+               <style>
+                @keyframes blink {
+                    0% { background-color: green; }
+                    50% { background-color: red; }
+                    100% { background-color: green; }
+                  }
+                
+                  .blinking-link {
+                  animation: blink 1s infinite;
+                  display: inline-block;
+                  padding: 10px 20px;
+                  color: white;
+                  text-decoration: none;
+                  border: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  }
+                </style>
+                <a href="https://www.ramanandacollegeonlineadmission.in/Department_Part/dept_login.aspx" class="blinking-link">ONLINE CLASS TEACHER-LOGIN</a>
+                
+        </div>
+        
+        </div> 
+    </div>
+  </div>
+</div>
+
+ 
+ 
+<!-- footer-->
+<div class="container-fluid footer">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+           <div class="row">
+               <div class="col-sm-6">
+                   <span>Designed  by rnc_cs_student</span>
+               </div>
+               <div class="col-sm-6">
+                    <span>© 2023. All Rights Reserved.</span>
+               </div>
+           </div> 
+        </div>
+       <div class="col-sm-6">
+            <div class="row">
+               <div class="col-sm-9">
+                    <span>This webpage is connected to Ramananda College</span>
+               </div>
+               <div class="col-sm-2">
+                    <span><!-- HTML -->
+                      <p> Visitors No: <span id="visitorCount">0</span></p>
+                      <script> // JavaScript
+                     document.addEventListener('DOMContentLoaded', function() {
+                     // Check if the visitorCount key exists in local storage
+                     if (localStorage.getItem('visitorCount')) {
+                     // Retrieve the current visitor count from local storage
+                     var count = parseInt(localStorage.getItem('visitorCount'));
+                     // Increment the count by 1
+                     count += 1;
+                     // Update the visitor count on the webpage
+                     document.getElementById('visitorCount').textContent = count;
+                     // Update the visitor count in local storage
+                     localStorage.setItem('visitorCount', count);
+                     } else {
+                     // Set the initial visitor count to 1
+                     var count = 1;
+                     // Store the visitor count in local storage
+                     localStorage.setItem('visitorCount', count);
+                     // Display the initial visitor count on the webpage
+                     document.getElementById('visitorCount').textContent = count;
+                     }
+                     });
+                     </script></span>
+               </div>
+              </div>
+               <!--<div class="col-sm-3">
+                    <span></span>
+               </div>-->
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+ 
+
+
+
+<!--       js file        -->
+  
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script>
+        window.onscroll = function(){myFunction()};
+       var navbar = document.getElementById("navbar");
+       var sticky = navbar.offsetTop;
+       
+       
+       function myFunction(){
+           if(window.pageYOffset >= sticky){
+               navbar.classList.add("sticky");
+           }
+           else{
+               navbar.classList.remove("sticky");
+           }
+       }
+        
+    </script>
+    </body>
+</html>
